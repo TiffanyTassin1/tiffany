@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="accueil.css">
+  <title>Réservation</title>
+  <div class="bandeau">
+    <img src="./photo/logo.png">
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+</head>
+
+
+<!----------MENU -------->
+
+<body>
+  <ul id="navigation">
+    <li><a href="" title="Accueil">Accueil </a>&ensp; </li>
+    <li><a href="recettes.html" title="Recettes">Recettes </a>&ensp; </li>
+    <li><a href="produits.html" title="Produits">Produits </a>&ensp; </li>
+    <li><a href="index.html" title="Livre_d'or">Livre d'or</a></li>
+  </ul>
+  <div class="defile">
+    <marquee scrollamount="8">Chaque jour, de nouvelles recettes sont réalisées grâce à nos produits locaux</p>
+  </div>
+  </marquee>
+  <hr color="Grey">
+
+  <h4>Réservations</h4>
+  <hr color="Grey">
+  <h3>Réserver une table </h3>
+
+  <div class="formulaire">
+    <form action="reservation.php" method="POST">
+      <label for="date"> Date </label>
+      <input type="date" id="date" name="date" required>
+      <label for="time">Horaires </label>
+      <input type="horaires" id="horaires" placeholder="00:00" name="horaires" required>
+      <br><br>
+
+      <label for="personnes">Nombre de personnes </label>
+      <select id="personnes" name="Personnes" required>
+        <option value="Une personne">1</option>
+        <option value="Deux personnes">2</option>
+        <option value="Trois personnes">3</option>
+        <option value="Quatre personnes">4</option>
+        <option value="Cinq personnes">5</option>
+        <option value="Six personnes">6</option>
+      </select>
+      <label for="groupe">Pour les groupes de plus de 6 personnes, merci de nous contacter. </label>
+
+      <h3>Coordonnées </h3>
+
+      <input type="text" id="nom_prenom" name="nom_prenom" placeholder="Nom et prénom.." required>
+
+
+      <input type id="number" name="Numéro" placeholder="Numéro de téléphone.." required>
+      <br><br>
+      <label for="message">Avez-vous un message à nous communiquer?</label>
+      <input type="text" name="message" id="message" required>
+
+
+
+      <input type="submit" value="Réservez" onsubmit="return Validate();">
+      <input type="reset" value="Effacer le formulaire" />
+    </form>
+  </div>
+
+
+
+</body>
+
+</html>

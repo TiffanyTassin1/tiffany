@@ -1,1 +1,79 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+	<title>The Cookbook Restaurant</title>
+	<link rel="stylesheet" href="accueil.css">
+	<div class="bandeau">
+		The Cookbook Restaurant
+		<br>
+		<br>
+		<br><br>
+	</div>
+</head>
+
+<!----------MENU -------->
+
+<body>
+	<header>
+	<ul id="navigation">
+		<li><a href="accueil.html" title="Accueil">Accueil </a></li>
+		<li><a href="recettes.html" title="Recettes">Recettes </a></li>
+		<li><a href="produits.html" title="Produits">Produits </a></li>
+		<li><a href="resa.html" title="reservation">Réservations</a></li>
+		</ul>
+
+<!---------TEXTE DEFILANT --------->
+
+		<div class="defile">
+			<marquee scrollamount="8">Chaque jour, de nouvelles recettes sont réalisées grâce à nos produits locaux</p>
+		</div>
+		</marquee>
+	</header>
+	<hr color="Grey">
+
+	<h4>Livre d'or</h4>
+	<hr color="Grey">
+	<script>
+		function Validate() {
+			var x = document.forms["guest"]["email"].value;
+			var y = document.forms["guest"]["name"].value;
+			if (y == null || y == "") {
+				alert("Please enter your Name! ");
+				return false;
+			}
+			if (x == null || x == "") {
+				alert("Please enter your email adress!");
+				return false;
+			}
+			var atpos = x.indexOf("@");
+			var dotpos = x.lastIndexOf(".");
+			if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+				alert("Not a valid e-mail adress");
+				return false;
+			}
+			else
+				return true;
+		}
+	</script>
+	</head>
+
+	<body>
+
+		<div id="menu"></div>
+		<div id="content">
+			<h2>Signez notre livre d'or </h2>
+			<form name="livredor" method="post" action="livredor.php">
+				<input type="text" name="Nom et prénom" placeholder="Nom et prénom" /><br />
+				<input type="text" name="Email" placeholder="Email" /><br />
+				<input type="text" name="Message" placeholder="Message" /><br />
+				<input type="submit" value="Envoyer" onsubmit="return Validate();">
+			</form>
+		</div>
+		</div>
+
+	</body>
+
+</html>

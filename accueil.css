@@ -1,0 +1,226 @@
+.bandeau{
+  width: 100%;
+  height: 400%;
+  background:white url(photo/restaurant.png) no-repeat;
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 500%;
+  font-style: italic;
+  color: white;
+  text-align: center;
+  opacity: 0.75;
+}
+
+
+/*MENU */
+#navigation li {
+  display: inline;
+}
+
+#navigation li a {
+ margin-left: 8%;
+  padding: 1% 3% ;
+  background: black ;
+  color:grey ;
+  border: 1px solid black;
+  font-size: 200%;
+  font-family: "Simphony";
+  line-height: 150%;
+  text-decoration: none ;
+}
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+  background: black ;
+  text-decoration: none;
+
+}
+/*---------------------------BANNIERE DEFILANTE----------
+---------------------------------------------------------*/
+
+Marquee {
+  color: grey;
+  font-size: 200%;
+}
+
+
+/*--------------------------IMAGES  ---------------------
+---------------------------------------------------------*/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-size: 110%;
+  font-family: fantasy;
+}
+/* -------------- */
+
+img {
+  height: 150%;
+  width: 15%;
+  margin-left: 8%;
+  opacity: 0.5;
+  
+ }
+
+.image span {
+  visibility: hidden;
+}
+
+.image img:hover + span {
+  visibility: visible;
+
+}
+
+span{
+  color:grey;
+  font-style: italic;
+  font-size: large;
+  text-align: left;
+  word-spacing: 0%;
+  border-left: 8%;
+  padding-left: 0%;
+}
+/* ----------------------TEXTES ----------
+------------------------------------------*/
+h1 {
+  color: grey;
+  text-align: left;
+  font-style: italic;
+  font-size: 250%;
+  margin-left: 8%;
+}
+
+h2 {
+  color: grey;
+  text-align: center;
+  font-style: italic;
+  font-size: 200%;
+}
+
+h3 {
+   color: grey;
+  font-size: 250%;
+  font-family: cursive;
+  margin-left: 8%;
+  margin-right: 5%;
+ 
+}
+
+h4 {
+  text-align: center;
+  color: grey;
+  font-size: 300%;
+}
+
+p {
+  text-align: left;
+  margin-left: 8%;
+  color: #dfbf9f;
+  font-family: Snell Roundhand, cursive;
+  font-size: 200%;
+  word-spacing: 300px;
+}
+
+.iframe  {
+    border: 1% solid;
+    width: 40%;
+    margin-left: 8%;
+    float: left;
+    opacity: 0.5;
+}
+/* --------------IMAGES RECETTES -------------
+----------------------------------------------*/ 
+
+
+.one img{
+  font-size: 100%;
+  width: 30%;
+  height: 20%;
+  margin-left: 8%;
+
+  } 
+
+.two img{
+  grid-column: 2;
+  grid-row: 3;
+  width:50%;
+  height: 50%;
+  margin-left: 8%;
+}
+
+.three img {
+  grid-column: 3;
+  grid-row: 2;
+  width: 50%;
+  height: 50%;
+  margin-left: 8%;
+}
+
+.four img {
+  grid-column: 2;
+  grid-row: 3;
+  width: 55%;
+  height: 60%;
+  margin-left: 8%;
+}
+
+/* -----------RESA------------ */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color:black;
+  color: grey;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: xx-large;
+  text-align: center;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+label {
+  color: grey;
+  font-size: 150%;
+  text-align: center;
+}
+
+
+
+div {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+}
+
+/* --------------FORMULAIRES -------------
+----------------------------------------------*/ 
+.formulaire {
+  display: flex;
+  column-count: 2;
+  column-gap: 10%;
+  column-rule-style: solid;
+  column-width: 1%;
+}
+
+.footer {
+bottom: 0;
+width:100%;
+height:0%;
+}
